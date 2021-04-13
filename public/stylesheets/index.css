@@ -1,0 +1,240 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat";
+    font-weight: bold;
+  }
+  
+  p {
+    color:#8F8F8F;
+  }
+  .Big-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+  .section-heading{
+    color: #7d0633;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  .f{
+    height: 350px !important;
+    width: 200px !important;
+    /*border-radius: 15px;*/
+  }
+  /* containers */
+  .container-fluid {
+    padding: 7% 15%;
+  }
+  /* Section */
+  .white-section{
+    background-color:  #080808;
+  
+  }
+  .colored-section{
+    background-color: #080808;
+    color: #fff;
+  
+  }
+  /* Navigation Bar */
+  .navbar-brand {
+    font-family: Ubuntu;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar {
+    padding: 0 0 4.5rem;
+  }
+  
+  .nav-link {
+    padding: 0 18px;
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+  }
+  /* combined class selector used for seperate padding in title section */
+  #title .container-fluid {
+    padding:3% 15% 7%;
+    text-align: left;
+    border-bottom: solid grey;
+  }
+  
+  /* Download Buttons */
+  .download-button {
+    margin: 5% 3% 5% 0;
+  }
+  
+  
+  /* Title image */
+  
+  .title-image {
+    width: 60%;
+    margin-left: 50px;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+    left: 80px;
+  }
+  
+  @media (max-width:991px){
+      #title{
+        text-align: center;
+        
+      }
+  
+    .title-image{
+      position:static;
+      transform: rotate(0);
+    }
+  
+  
+  }
+  .set{
+    opacity: 0.4;
+    width: 800px;
+    height: 980px;
+    border:solid grey;
+    border-width: 0 2px 0 2px ;
+  }
+  #features {
+    background-color:#080808;
+    position: relative;
+    border-bottom: solid grey;
+    /* z-index: 1;*/
+  }
+  .feature-title{
+    font-size: 1.5rem;
+    color: #8F8F8F;
+    font-weight: bold;
+  }
+  
+  .feature-box {
+    text-align: center;
+    padding: 20%;
+  }
+  
+  .icon {
+    /* color:#c060a1; */
+    color: #7d0633;
+    margin-bottom: 1rem;
+  }
+  
+  .icon:hover {
+    color:white;
+  }
+  
+  #testimonials{
+    background-color: #000000;
+  }
+  .testimonial-text{
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  .testimonial-image{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 20px;
+  }
+  #press{
+    background-color: #000000;
+    text-align: center;
+    padding-bottom: 3%;
+    border-bottom: solid grey;
+  }
+  .press-logo{
+    /* width: 15%; */
+    width: 10%;
+    height: 10%;
+    /* margin:20px 20px 50px; */
+    margin:20px 100px 50px;
+  }
+  /* Pricing Section */
+  #pricing{
+    background-color:#000000;
+    padding: 100px;
+    border-bottom: solid grey;
+  }
+  .price-text{
+    text-align: center;
+    font-size:3rem;
+    line-height:1.5;
+    font-weight: bold;
+  }
+  .price-text-design{
+    color: honeydew;
+    padding-left: 10px;
+    font-weight: bold;
+  }
+  .pricing-column{
+    padding: 3% 2%;
+  
+  }
+  /* cta Section*/
+  #cta{
+    /* padding same as carousel section or features */
+  }
+  /* CTA heading */
+  /* Big heading is used here */
+  /* Footer */
+  #footer{
+    background-color: #000000;
+    text-align: center;
+  }
+  /* Margin for icons to provide space between them */
+  .social-icon{
+    margin:20px 10px;
+  
+    /* padding: 10px 5px 10px 5px; */
+  
+  }
+  .social-icons{
+    font-size: 35px;
+    color: #7d0633;
+    margin-right: 15px;
+  }
+  .copyright{
+    font-weight: bold;
+  }
+  .hr1{
+      border:5px solid white;
+  }
+  /* sign in
+  
+  .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  } */
+  
