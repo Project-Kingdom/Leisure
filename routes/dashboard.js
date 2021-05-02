@@ -4,8 +4,9 @@ var customerModel=require('../modules/customer');
 const mongoose=require('mongoose');
 const bcrypt=require('bcryptjs');  
 var jwt = require('jsonwebtoken');
-const { check, validationResult } = require('express-validator');
-/* GET home page. */
+const axios=require('axios');
+require('dotenv').config({ path: __dirname+'/.env' })
+
 function checkLoginUser(req,res,next){
   var userToken=localStorage.getItem('userToken');
   try {
@@ -15,40 +16,53 @@ function checkLoginUser(req,res,next){
   }
   next();
 }
-
 if (typeof localStorage === "undefined" || localStorage === null) {
   var LocalStorage = require('node-localstorage').LocalStorage;
   localStorage = new LocalStorage('./scratch');
 }
 
-function checkUsername(req,res,next){
-  var uname=req.body.uname;
-  var checkexitemail=customerModel.findOne({username:uname});
-  checkexitemail.exec((err,data)=>{
- if(err) throw err;
- if(data){
-  
-return res.render('sign_up', { title: 'Leisure', msg:'Username Already Exit' });
 
- }
- next();
-  });
-}
-
-function checkEmail(req,res,next){
-  var email=req.body.email;
-  var checkexitemail=customerModel.findOne({email:email});
-  checkexitemail.exec((err,data)=>{
- if(err) throw err;
- if(data){
-return res.render('sign_up', { title: 'Leisure', msg:'Email Already Exit' });
-
- }
- next();
-  });
-}
-router.get('/',checkLoginUser, function(req, res, next) {
+router.get('/',checkLoginUser, async(req, res)=> {
     var Username=localStorage.getItem('Username');
-   res.render('dashboard', { title: 'Leisure',Username:Username, msg:'' });
+    try{
+      const movieAPI = await axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=a119b32c7ac09bfbd83ca7c34317afb1`);
+      console.log(movieAPI.data);
+      res.render('dashboard', { title: 'Leisure',Username:Username, msg:'',articles:movieAPI.data});
+    } catch(err){
+      if(err.response) {
+        res.render('index', { articles : null })
+        console.log(err.response.data)
+        console.log(err.response.status)
+        console.log(err.response.headers)
+    } else if(err.requiest) {
+        res.render('index', { articles : null })
+        console.log(err.requiest)
+    } else {
+        res.render('index', { articles : null })
+        console.error('Error', err.message)
+    }
+    }
  });
+ router.post('/', async(req, res) => {
+  let search = req.body.search
+  var Username=localStorage.getItem('Username');
+  try {
+      const movieAPI = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=a119b32c7ac09bfbd83ca7c34317afb1&query=${search}`)
+      res.render('movie_search', {title: 'Leisure',Username:Username, msg:'', articles : movieAPI.data })    
+  } catch (err) {
+      if(err.response) {
+          res.render('movie_search', {title: 'Leisure',Username:Username, msg:'', articles : null })
+          console.log(err.response.data)
+          console.log(err.response.status)
+          console.log(err.response.headers)
+      } else if(err.requiest) {
+          res.render('movie_search', { title: 'Leisure',Username:Username, msg:'', articles : null })
+          console.log(err.requiest)
+      } else {
+          res.render('movie_search', { title: 'Leisure',Username:Username, msg:'', articles : null })
+          console.error('Error', err.message)
+      }
+  } 
+})
+
   module.exports = router;

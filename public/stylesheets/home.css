@@ -73,7 +73,7 @@ body {
   }
   /* combined class selector used for seperate padding in title section */
   #title .container-fluid {
-    padding:3% 15% 7%;
+    padding:3% 15% 2%;
     text-align: left;
     border-bottom: solid grey;
   }
@@ -146,7 +146,7 @@ body {
   #testimonials{
     background-color: #000000;
   }
-  .testimonial-text{
+  .testimonial-play-text{
     font-size: 3rem;
     line-height: 1.5;
   }
@@ -163,10 +163,8 @@ body {
     border-bottom: solid grey;
   }
   .press-logo{
-    /* width: 15%; */
     width: 10%;
     height: 10%;
-    /* margin:20px 20px 50px; */
     margin:20px 100px 50px;
   }
   /* Pricing Section */
@@ -175,13 +173,13 @@ body {
     padding: 100px;
     border-bottom: solid grey;
   }
-  .price-text{
+  .price-play-text{
     text-align: center;
     font-size:3rem;
     line-height:1.5;
     font-weight: bold;
   }
-  .price-text-design{
+  .price-play-text-design{
     color: honeydew;
     padding-left: 10px;
     font-weight: bold;
@@ -194,9 +192,7 @@ body {
   #cta{
     /* padding same as carousel section or features */
   }
-  /* CTA heading */
-  /* Big heading is used here */
-  /* Footer */
+  
   #footer{
     background-color: #000000;
     text-align: center;
@@ -204,9 +200,6 @@ body {
   /* Margin for icons to provide space between them */
   .social-icon{
     margin:20px 10px;
-  
-    /* padding: 10px 5px 10px 5px; */
-  
   }
   .social-icons{
     font-size: 35px;
@@ -219,35 +212,4 @@ body {
   .hr1{
       border:5px solid white;
   }
-  /* sign in
-  
-  .form-signin {
-    width: 100%;
-    max-width: 330px;
-    padding: 15px;
-    margin: 0 auto;
-  }
-  .form-signin .checkbox {
-    font-weight: 400;
-  }
-  .form-signin .form-control {
-    position: relative;
-    box-sizing: border-box;
-    height: auto;
-    padding: 10px;
-    font-size: 16px;
-  }
-  .form-signin .form-control:focus {
-    z-index: 2;
-  }
-  .form-signin input[type="email"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  .form-signin input[type="password"] {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  } */
   

@@ -5,7 +5,8 @@ const mongoose=require('mongoose');
 const bcrypt=require('bcryptjs');  
 var jwt = require('jsonwebtoken');
 const { check, validationResult } = require('express-validator');
-/* GET home page. */
+
+// Starting
 router.get('/', function(req, res, next) {
   var loginUser=localStorage.getItem('loginUser');
   if(loginUser){
@@ -37,7 +38,6 @@ function checkUsername(req,res,next){
  if(data){
   
 return res.render('sign_up', { title: 'Leisure', msg:'Username Already Exit' });
-
  }
  next();
   });
@@ -56,6 +56,7 @@ return res.render('sign_up', { title: 'Leisure', msg:'Email Already Exit' });
   });
 }
 
+// Log_In Method
 router.get('/log_in', function(req, res, next) {
   var loginUser=localStorage.getItem('loginUser');
   if(loginUser){
@@ -89,17 +90,12 @@ if(bcrypt.compareSync(password,getPassword)){
    //res.render('log_in', { title: 'Leisure', msg:"Login Successfully." });
 }else{
   res.render('log_in', { title: 'Leisure', msg:"Invalid Username and Password." });
-
 }
-    } 
-  }); 
- 
+  } 
+}); 
 });
-// router.get('/dashboard',checkLoginUser, function(req, res, next) {
-//    //var loginUser=localStorage.getItem('loginUser');
-//   res.render('dashboard', { title: 'Leisure', msg:'' });
-// });
 
+// Sign_up Method
 router.get('/sign_up', function(req, res, next) {
   var loginUser=localStorage.getItem('loginUser');
   if(loginUser){
@@ -129,17 +125,19 @@ router.post('/sign_up',checkUsername,checkEmail,function(req, res, next) {
     } 
 });
 
+// Home
 router.get('/home', function(req, res, next) {
   var Username=localStorage.getItem('Username');
   var loginUser=localStorage.getItem('loginUser');
   res.render('home', { title: 'Leisure',Username:Username, msg:'' });
 });
+
+// Payment Method
 router.get('/payment_49', function(req, res, next) {
   var price=49;
   var quality="HD available";
   res.render('payment', { title: 'Leisure' ,price:price,quality:quality, msg:'' });
 });
-
 
 router.get('/payment_99', function(req, res, next) {
   var price=99;
@@ -151,8 +149,7 @@ router.post('/payment',function(req, res, next) {
   res.redirect('/dashboard');
 });
 
-
-
+// Log_Out Method
 router.get('/logout', function(req, res, next) {
   localStorage.removeItem('userToken');
   localStorage.removeItem('loginUser');

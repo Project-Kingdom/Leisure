@@ -1,224 +1,66 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <title>Leisure</title>
+  <head>
+    <meta charset="utf-8">
+    <title>Leisure</title>
   <!--Google Fonts-->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
   <!--Css stylesheets-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="/stylesheets/dashboard.css">
-  <link rel="stylesheet" href="/stylesheets/style.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/dashboard.css">
   <!--Fonts Awesome-->
-
-  <script src="https://use.fontawesome.com/a6ebce2573.js"></script>
-
+    <script src="https://use.fontawesome.com/a6ebce2573.js"></script>
+  <!-- Icon -->
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--Bootstrap Scripts-->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  </head>
 
 <!--BODY-->
-
-<body>
-  <section class="colored-section" id="title">
-
-
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a href="/dashboard">
-      <img class="logoimg" src="/images/coollogo_com-2967752.png" alt="" width="150" height="72">
-      </a>
-      <!-- <a class="navbar-brand" href="">Leisure</a> -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="#Hol">HollyWood<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#Bol">BollyWood<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#Doc">Documentary <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#Kid1">Kids <span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-      
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-
-           <li class="nav-item">
-            
-            <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2">
-              <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" 
-                aria-label="Search">
-              <i class="fas fa-search" aria-hidden="true"></i>
-            </form>
-
-          </li> 
-          <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-user-circle" style="font-size:34px;color:grey;margin-top: 6px;"><span style="position: relative;bottom: 8px;color:white;font-size:15px;">
-                 <%= Username %></span></i>
-            </a> 
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="/logout"><span style="color: black;"> Sign Out</span></a>
-            </div>
-
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </section>
-
+  <body>
+    <%- include('./partials/app_bar.ejs') %>
   <!-- Movies Carousel -->
   <h1 class="carouselHeading" id="Hol">HollyWood Movies</h1>
   <!-- carousel 1 -->
   <section class="colored-section" id="HollyWood">
-
-    <div id="testimonial-carousel-Movie" class="carousel slide" data-ride="false">
-
-      <div class="carousel-inner">
-
-        <div class="carousel-item active container-fluid">
-
-          <div class="row ">
-
-            <div class="col-lg-2 btn ">
-              <div class="middle">
-              <img class="testimonial-image f" src="/images/Movies/bohemian-rhapsody-web.jpg" alt="gangs of wassepur" >
-              
-                <div class="text">Play &#9658</div>
-              </div>
+    <div  class="carousel-slide" data-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active container-fluid">
+            <div class="row ">
+              <div class="btn-12" style="display: grid;">
+                <div class=" middle place">
+                  <% if(articles != null) { %>
+                    <% if(articles.total_results != 0) { %>
+                      <% articles.results.forEach(function(article, index) { %>
+                        <% if(article.poster_path != null) { %>
+                          <img class="test-image f" src="https://image.tmdb.org/t/p/w500<%- article.poster_path %>" alt="">
+                        <% } %>
+                      <% }) %>
+                    <% }%>
+                  <% } %>
+                </div>
+              </div> 
             </div>
-
-            <div class="col-lg-2 btn">
-              <div class="middle">
-              <img class="testimonial-image f" src="/images/Movies/spies_in_disguise_ver6_xlg.jpg" alt="the godfather" >
-              <div class="text">Play &#9658</div>
-            </div>
-            </div>
-
-            <div class="col-lg-2 btn">
-              <div class="middle">
-              <img class="testimonial-image f" src="/images/Movies/BLACKKLANSMAN_FLAG_ONESHEET_FINISH_V11547059100.jpg" alt="crazy rich asians" >
-              <div class="text">Play &#9658</div>
-            </div>
-            </div>
-
-            <div class="col-lg-2 btn">
-              <div class="middle">
-              <img class="testimonial-image f" src="/images/Movies/star.jpg" alt="crazy rich asians">
-              <div class="text">Play &#9658</div>
-            </div>
-            </div>
-            
-            <div class="col-lg-2 btn">
-              <div class="middle">
-              <img class="testimonial-image f" src="/images/Movies/Once-Upon-Time-Hollywood-Movie-Posters.jpg" alt="gangs of wassepur" >
-              <div class="text">Play &#9658</div>
-            </div>
-            </div>
-
-            <div class="col-lg-2 btn">
-              <div class="middle">
-              <img class="testimonial-image f" src="/images/Movies/fight.jpg" alt="the godfather">
-              <div class="text">Play &#9658</div>
-            </div>
-            </div>
-           
-          
-             
-            
-
           </div>
         </div>
-
-        <!-- carousel 2 -->
-
-        <div class="carousel-item container-fluid">
-
-          <div class="row ">
-
-            <div class="col-lg-2 btn">
-              <div class="middle">
-              <img class="testimonial-image f" src="/images/Movies/bcf_coldpursuit2.jpeg" alt="gangs of wassepur" >
-              <div class="text">Play &#9658</div>
-            </div>
-            </div>
-
-            <div class="col-lg-2 btn ">
-              <div class="middle">
-              <img class="testimonial-image f" src="/images/Movies/escape_from_pretoria_xlg.jpg" alt="the godfather" >
-              <div class="text">Play &#9658</div>
-            </div>
-            </div>
-
-            <div class="col-lg-2 btn ">
-              <div class="middle">
-              <img class="testimonial-image f" src="/images/Movies/ROMA_Vertical-Huddle_RGB.jpg" alt="crazy rich asians" >
-              <div class="text">Play &#9658</div>
-            </div>
-            </div>
-
-
-            <div class="col-lg-2 btn">
-              <div class="middle">
-              <img class="testimonial-image f" src="/images/Movies/slack-imgs-6.jpg" alt="spectre" >
-              <div class="text">Play &#9658</div>
-            </div>
-            </div>
-            <div class="col-lg-2 btn">
-              <div class="middle">
-              <img class="testimonial-image f" src="/images/Movies/war.webp" alt="crazy rich asians">
-              <div class="text">Play &#9658</div>
-            </div>
-            </div>
-
-
-            <div class="col-lg-2 btn">
-              <div class="middle">
-              <img class="testimonial-image f" src="/images/Movies/black.jpg" alt="spectre">
-              <div class="text">Play &#9658</div>
-            </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#testimonial-carousel-Movie" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#testimonial-carousel-Movie" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-
-
+        <a class="carousel-control-prev" onclick="sliderScrollLeft()" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" onclick="sliderScrollRight()" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a> 
     </div>
-
   </section>
 
    <!-- Bollywood Maza -->

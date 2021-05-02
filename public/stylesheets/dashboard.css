@@ -1,46 +1,40 @@
-body {
+body 
+  {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     background-color:#080808;
     color:#fff;
   }
   /* #101010 */
-  .btn {
-    
+.btn 
+  {
+    width: 100vw;
     border: none;
     color: white;
     text-align: center;
     font-size: 16px;
     opacity: 1;
-    transition: 0.3s;
+    /* transition: 0.3s; */
   }
   
-  .btn:hover {
-    opacity: 0.5;
-    ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1); /* Safari 3-8 */
+.btn:hover
+  {
+    opacity: 0.7;
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1);
     transform: scale(1.2);
+  } 
+  .btn:hover .text 
+  {
+    color: white; 
+    font-style: times;
+    font-weight: bold;
+  } 
+.active-cyan input.form-control[type=text]
+  {
+    border-bottom: 1px solid #4dd0e1;
+    box-shadow: 0 1px 0 0 #4dd0e1;
   }
-  
-    .text {
-      background-color:#080808 ;
-      color: #080808;
-      font-size: 17px;
-      margin-top : 10px;
-      text-align :center;
-      width :100px;
-      margin-left : 30px;
-    }
-    .btn:hover  .text {
-      color: white; 
-      font-style: times;
-      font-weight: bold;
-      /*background-color: rosybrown;*/
-      /*visibility:visible;*/}
-      .active-cyan input.form-control[type=text] {
-        border-bottom: 1px solid #4dd0e1;
-        box-shadow: 0 1px 0 0 #4dd0e1;
-      }
       .active-cyan .fa, .active-cyan-2 .fa {
         color: #4dd0e1;
       }
@@ -97,7 +91,30 @@ body {
     font-family: "Montserrat";
     font-size: 1.2rem;
   }
-  .dropdown-item{
+.input-icons i 
+  {
+    position: absolute;
+  }
+.input-icons
+  {
+    width: 200%;
+    margin-bottom: 10px;
+  }
+          
+.icon
+  {
+    padding-top: 5px; 
+    min-width: 40px;
+    color:black; 
+  }
+.input-field
+  {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+.dropdown-item{
     font-size: 1rem;
     background-color: #fff;
   }
@@ -115,8 +132,21 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
-    margin-: 10px;
+    margin: 10px;
+    transition: transform 0.1s ease-in;
   }
+  .text
+  {
+    background-color:#080808 ;
+    color: #080808;
+    font-size: 17px;
+    margin-top : 10px;
+    text-align :center;
+    width :100px;
+    margin-left : 40px;
+  }
+  
+  
   #press{
     background-color: #000000;
     text-align: center;
@@ -141,13 +171,7 @@ body {
     padding: 3% 2%;
   
   }
-  /* cta Section*/
-  #cta{
-    /* padding same as carousel section or features */
-  }
-  /* CTA heading */
-  /* Big heading is used here */
-  /* Footer */
+  
   .footer{
     /* background-color: #fff; */
     text-align: center;
@@ -343,4 +367,90 @@ body {
     opacity: 1;
     filter: alpha(opacity=100);
   }
+  .topnav {
+    overflow: hidden;
+  }
+  .topnav .search-container {
+    float: right;
+  }
   
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 1px;
+    font-size: 13px;
+    border-radius: 15px 0 0 15px;
+    border: none;
+    outline: white;
+  }
+  
+  .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 1px;
+    margin-right: 40px;
+    color: black;
+    background-color: white;
+    font-size: 13px;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    outline: white;
+    cursor: pointer;
+  }
+  
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;  
+    }}
+    .place{
+      width: 100%;
+      display: flex;overflow-x:scroll; overflow-y: hidden;
+    }
+     .place::-webkit-scrollbar{
+      overflow: hidden;
+    }  
+    .test-image{
+      width: 100%;
+      height: 220px;
+      text-align: center;
+      margin: 20px;
+      transition: transform 0.1s ease-in;
+    }
+    .test-image:hover{
+      opacity: 0.5;
+      transform: scale(1.5);
+    } */
+    .play-text
+    {
+      background-color:#080808 ;
+      color: red;
+      font-size: 17px;
+      margin-top : 50px;
+      text-align :center;
+      width :100px;
+      margin-left : 40px;
+    }
+
+    .btn-12
+  {
+    width: 100vw;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    opacity: 1;
+    /* transition: 0.3s; */
+  }
